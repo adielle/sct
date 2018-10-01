@@ -1,0 +1,510 @@
+<html>
+
+
+<style>
+
+ body{
+	 background-color: black;
+
+ }
+ 
+div.bodybox {
+  
+    background-color: yellow;
+	margin:auto;
+    width: 1200px;
+	height: 1344px;
+	
+	
+	
+}
+
+div.headerbox{
+ background-color: white;
+	margin:auto;
+    width: 1200px;
+	height: 145px
+
+}
+
+div.footerbox{
+	background-color: maroon;
+	margin:auto;
+    width: 1200px;
+	height: 200px;
+
+}
+
+img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 3px;
+
+}
+ {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	
+p.firstpar{
+	margin:auto;
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	color:black;
+	width: 40em;
+	border: 1px solid yellow;
+	word-wrap: break-word;
+	
+	
+}	
+
+
+p.footerinfo{
+	margin: left;
+	text-align: left;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	color:white;
+	width: 40em;
+	border: 1px solid maroon;
+	word-wrap: break-word;
+	padding-left: 100px;
+
+}
+
+p.footerinfo2{
+	margin: right;
+	text-align: right;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	color:white;
+	width: 20em;
+	border: 1px solid maroon;
+	word-wrap: break-word;
+
+}
+
+h1.firsthead{
+text-align:center;
+color: maroon;
+
+}
+
+h1.secondhead{
+text-align:center;
+color: maroon;
+
+}
+button.button1{
+	margin: auto;
+	background-color: grey;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+
+td.offerimage{
+padding: 20px;
+}
+
+table.footer{
+padding: 0.5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	font-size: 16px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+label {
+    padding: 20px 20px 20px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+	margin: auto;
+	background-color: grey;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+label{
+	font-size: 16px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.container {
+	width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 150px;
+	margin: auto;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
+td.bottompicemail{
+margin: auto;
+padding-right: 100px;
+
+}
+
+table.bottompic{
+margin: auto;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: maroon;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    color: maroon;
+	padding:8px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+td.logos{
+padding-left: 350px;
+}
+
+</style>
+
+<div class = "headerbox">
+<head>
+
+<table class= "headstuff">
+<tr>
+<td><div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+</div>
+<td class="logos"><img class="logo" src="C:\Users\Adiellec\Documents\SCT\logo2.png" height = "138px" >
+<tr>
+</table>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+</head>
+</div>
+
+
+<div class = "bodybox">
+
+<body>
+
+
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="scttest.html">Home</a>
+  <a href="sctaboutus.html">About Us</a>
+  <a href="sctcontactus.html">Contact Us</a>
+  
+  
+</div>
+<br>
+<h1 class = "firsthead"> CONTACT US </h1>
+<br>
+
+<p class = "firstpar"> Fill out the form below and we'll get back to you as soon as possible. 
+</p>
+<br><br>
+
+<div class="container">
+
+  <form action="sctcontactus.html" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+	 <div class="row">
+      <div class="col-25">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email address..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="tourtype">Tour Type</label>
+      </div>
+      <div class="col-75">
+        <select id="tourtype" name="tourtype">
+          <option value="citytour">City Tour</option>
+          <option value="schooltour">School Tour</option>
+          <option value="frigatebay">Frigate Bay Tour</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Additional Information</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+	<br><br>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+ 
+
+ 
+
+ 
+
+ 
+<br>
+<br>
+<table class="bottompic">
+<tr class="bottompic">
+<td><img class="bottompic" src="C:\Users\Adiellec\Documents\SCT\fb icon.png" height = "168px"> 
+<td><img class = "bottompicemail" src="C:\Users\Adiellec\Documents\SCT\email icon.png" height = "138px">
+<tr>
+</table>
+
+
+
+<?php 
+
+
+
+
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
+$email = $_POST['email'];
+$tourtype=$_POST['tourtype'];
+$info=$_POST['subject'];
+
+if($fname==null||$fname==""||$lname==""||$lname==null||$email==""||$email==null||$tourtype==""|| $tourtype==null||$info==""|| $info==null){
+	
+	
+	echo("<b> Please complete all fields </b> <br><br>");
+}else{
+	
+	print(" <b> Thanks! Form Complete</b><br><br>");
+	print("See info here");
+	print($fname);
+	print("<br>");
+	print($lname);
+	print("<br>");
+	print($email);
+	print("<br>");
+	print($tourtype);
+	print("<br>");
+	print($info);
+	print("<br>");
+	
+	
+}
+
+?>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "230px";
+    //document.getElementById("main").style.marginLeft = "200px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+
+
+</script>
+</body>
+</div>
+
+<div class = "footerbox">
+<footer>
+<br>
+
+<table class="footer">
+<tr>
+<td><p class = "footerinfo"> Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada,
+ integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet 
+ suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+</p>
+
+<td><p class = "footerinfo2"> Lorem ipsum dolor sit amet, sapien etiam, 
+nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. 
+Arcu es massa vestibulum malesuada,
+<tr> 
+</p>
+
+<table>
+</footer>
+</div>
+</html>		
+		
+		
+		
+		

@@ -1,0 +1,383 @@
+<html>
+
+
+<style>
+
+
+
+
+ 
+ body{
+	 background-color: white;
+
+ }
+ 
+div.bodybox {
+  
+    background-color: yellow;
+	margin:auto;
+    width: 1200px;
+	height: 1344px;
+	
+	
+	
+}
+
+div.headerbox{
+ background-color: white;
+	margin:auto;
+    width: 1200px;
+	height: 145px
+	
+
+}
+
+div.footerbox{
+	background-color: maroon;
+	margin:auto;
+    width: 1200px;
+	height: 200px;
+
+}
+
+img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 3px;
+
+}
+ {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	
+p.firstpar{
+	margin: left;
+	text-align: justify;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	color:black;
+	width: 55em;
+	border: 1px solid yellow;
+	word-wrap: break-word;
+	padding-left: 200px;
+	
+	
+	
+}	
+
+
+p.footerinfo{
+	margin: left;
+	text-align: left;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	color:white;
+	width: 40em;
+	border: 1px solid maroon;
+	word-wrap: break-word;
+	padding-left: 100px;
+
+}
+
+p.footerinfo2{
+	margin: right;
+	text-align: right;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	color:white;
+	width: 20em;
+	border: 1px solid maroon;
+	word-wrap: break-word;
+
+}
+
+h1.firsthead{
+text-align:center;
+color: maroon;
+
+}
+
+h1.secondhead{
+text-align:center;
+color: maroon;
+
+}
+button.button1{
+	margin: auto;
+	background-color: grey;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+
+td.offerimage{
+padding: 20px;
+}
+
+table.footer{
+padding: 0.5px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: maroon;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    color: maroon;
+	padding:8px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+td.logos{
+padding-left: 350px;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+</style>
+
+<div class = "headerbox">
+<head>
+<table class= "headstuff">
+<tr>
+<td><div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+</div>
+<td class="logos"><img class="logo" src="C:\Users\Adiellec\Documents\SCT\logo2.png" height = "138px" >
+<tr>
+</table>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+</div>
+
+
+<div class = "bodybox">
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="scttest.html">Home</a>
+  <a href="sctaboutus.html">About Us</a>
+  <a href="http://localhost:8080/sctcontactus.php">Contact Us</a>
+</div>
+
+
+<br>
+
+
+<br>
+<h1 class = "firsthead"> ABOUT US </h1>
+<br>
+
+<p class = "firstpar"> Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada,
+ integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet 
+ suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+ </p>
+ 
+ <p class = "firstpar"> 
+ Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada,
+ integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet 
+ suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+ </p>
+ 
+  <p class = "firstpar"> 
+ Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada,
+ integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet 
+ suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+</p>
+<br>
+
+<h1 class = "firsthead"> OUR MOTTO </h1>
+<br>
+
+<p class = "firstpar"> Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada.
+
+</p>
+
+<br>
+<h1 class = "firsthead"> OUR VALUES </h1>
+<br>
+
+<p class = "firstpar"> Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada.
+</p>
+
+ <p class = "firstpar"> 
+Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada,
+ integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet 
+ suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+ </p>
+ 
+  <p class = "firstpar"> 
+ Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. 
+Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada,
+ integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet 
+ suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+
+</p>
+
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "230px";
+    //document.getElementById("main").style.marginLeft = "200px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+</body>
+</div>
+
+<div class = "footerbox">
+<footer>
+<br>
+
+<table class="footer">
+<tr>
+<td><p class = "footerinfo"> 
+
+<a href = "http://localhost:8080/sctcontactus.php"> Sugar City Trains
+<br>
+Basseterre,
+<br>
+St. Kitts
+<br>
+Tel: 869-000-0000
+<br>
+ Email: info@sugarcitytrains.com </a>
+</p>
+
+<td><p class = "footerinfo2"> COPYRIGHT &copy; 2018 Sugar City Trains
+<br>
+
+<tr> 
+</p>
+
+<table>
+</footer>
+</div>
+</html>		
+		
+		
+		
+		
